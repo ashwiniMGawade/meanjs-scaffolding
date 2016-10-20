@@ -9,6 +9,18 @@
 
   function routeConfig($stateProvider) {
     $stateProvider
+      .state('update-employee', {
+        url: '/update-employee',
+        templateUrl: 'modules/employees/client/views/update-employee.client.view.html',
+        controller: 'UpdateemployeeController',
+        controllerAs: 'vm'
+      })
+      .state('get-user-name', {
+        url: '/get-user-name',
+        templateUrl: 'modules/employees/client/views/user-details.client.view.html',
+        controller: 'GetUserNameController',
+        controllerAs: 'vm'
+      })
       .state('employees', {
         abstract: true,
         url: '/employees',
